@@ -345,6 +345,18 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  //mouse stalker
+  .cursor,
+  .follower {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: none;
+    pointer-events: none;
+    display: none;
+  }
+
   #inner_wrap {
     padding: 0 30px;
   }
@@ -361,19 +373,21 @@ body {
     margin-bottom: 0;
 
     .name {
-      font-size: 30px;
+      width: 100%;
+      font-size: 20px;
       font-weight: 100;
       letter-spacing: 12px;
       color: #fff;
-      margin: 0 0 20px 100px;
+      margin: 0 0 20px 30px;
       font-family: "Raleway", sans-serif;
     }
     .title {
-      font-size: 30px;
+      width: 100%;
+      font-size: 20px;
       font-weight: 100;
       letter-spacing: 16px;
       color: #fff;
-      margin: 0 0 150px 100px;
+      margin: 0 0 150px 30px;
       padding-bottom: 200px;
       font-family: "Raleway", sans-serif;
     }
@@ -414,7 +428,7 @@ body {
 
       .white_01 {
         width: 100%;
-        padding-bottom: 300px;
+        padding-bottom: 200px;
         overflow: hidden;
         position: relative;
       }
@@ -464,7 +478,7 @@ body {
 
       .white_02 {
         width: 100%;
-        padding-bottom: 300px;
+        padding-bottom: 200px;
         overflow: hidden;
         position: relative;
       }
@@ -514,7 +528,7 @@ body {
 
       .white_03 {
         width: 100%;
-        padding-bottom: 300px;
+        padding-bottom: 200px;
         overflow: hidden;
         position: relative;
       }

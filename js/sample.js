@@ -1,8 +1,8 @@
 $(function () {
-  $("header footer").inertiaScroll({
-    parent: $("#wrap"),
-    childDelta1: 1,
-  });
+  // $("header footer").inertiaScroll({
+  //   parent: $("#wrap"),
+  //   childDelta1: 1,
+  // });
 
   var cursor = $(".cursor"),
     cWidth = 20,
