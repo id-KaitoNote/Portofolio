@@ -362,6 +362,7 @@ body {
     display: none;
   }
   #inner_wrap {
+    box-sizing: border-box;
     padding: 0 30px;
   }
   #main {
@@ -375,7 +376,7 @@ body {
     margin-bottom: 0;
   }
   #main .name {
-    width: 100%;
+    max-width: 100%;
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 12px;
@@ -384,7 +385,7 @@ body {
     font-family: "Raleway", sans-serif;
   }
   #main .title {
-    width: 100%;
+    max-width: 100%;
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 16px;
