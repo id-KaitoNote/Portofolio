@@ -9,6 +9,94 @@ body {
   cursor: none;
 }
 
+#svg_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e1e1e;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: svg_bg 5.5s forwards;
+  animation: svg_bg 5.5s forwards;
+}
+
+@keyframes svg_bg {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -5;
+  }
+}
+
+.case {
+  width: 600px;
+}
+
+#svg {
+  width: 100%;
+}
+
+.path {
+  stroke: white;
+  fill: none;
+  stroke-width: 3.5;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: path 2.5s ease-in alternate 0s forwards;
+  -webkit-animation: path 2.5s ease-in 0s forwards;
+  animation: path 2.5s ease-in 0s forwards;
+}
+
+.path2 {
+  animation-delay: 0.8s;
+}
+
+.path3 {
+  animation-delay: 2.7s;
+}
+
+.path4 {
+  animation-delay: 2.8s;
+}
+
+.path5 {
+  animation-delay: 2.9s;
+}
+
+@keyframes DASH {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes path {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes path {
+  0% {
+    stroke-dashoffset: 5000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 //mouse stalker
 .cursor,
 .follower {
@@ -132,7 +220,7 @@ body {
       font-family: "Raleway", sans-serif;
       letter-spacing: 5px;
       color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke: 2px #fff;
+      -webkit-text-stroke: 1px #fff;
       text-shadow: 0px 0px 10px #000, 8px 8px 4px rgba(0, 0, 0, 0.5);
       position: absolute;
       top: 240px;
@@ -175,7 +263,7 @@ body {
       font-family: "Raleway", sans-serif;
       letter-spacing: 5px;
       color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke: 2px #fff;
+      -webkit-text-stroke: 1px #fff;
       text-shadow: 0px 0px 10px #000, 8px 8px 4px rgba(0, 0, 0, 0.5);
       position: absolute;
       top: 100px;
@@ -345,6 +433,32 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #svg_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e1e1e;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: svg_bg 5.5s forwards;
+    animation: svg_bg 5.5s forwards;
+    box-sizing: border-box;
+    padding: 50px;
+  }
+  .case {
+    width: 300px;
+  }
+
+  #svg {
+    width: 100%;
+  }
+
   //mouse stalker
   .cursor,
   .follower {
@@ -467,7 +581,7 @@ body {
         font-family: "Raleway", sans-serif;
         letter-spacing: 5px;
         color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 2px #fff;
+        -webkit-text-stroke: 1px #fff;
         position: absolute;
         top: 0;
         right: 50%;
@@ -517,7 +631,7 @@ body {
         font-family: "Raleway", sans-serif;
         letter-spacing: 5px;
         color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 2px #fff;
+        -webkit-text-stroke: 1px #fff;
         text-shadow: 0px 0px 10px #000, 8px 8px 4px rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 0;
@@ -614,11 +728,11 @@ body {
         span {
           width: 100%;
           color: white;
+          font-family: "Noto Sans JP", sans-serif;
           font-size: 14px;
           line-height: 1.5;
           position: relative;
           display: inline-block;
-          text-align: center;
         }
         span::after {
           display: none;
