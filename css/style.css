@@ -600,7 +600,7 @@ body {
     width: 100%;
     color: white;
     font-size: 14px;
-    line-height: 3;
+    line-height: 1.5;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -627,7 +627,7 @@ body {
     animation-name: fade-in;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;

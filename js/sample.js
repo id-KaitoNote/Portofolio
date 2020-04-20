@@ -1,8 +1,10 @@
 $(function () {
-  // $("header footer").inertiaScroll({
-  //   parent: $("#wrap"),
-  //   childDelta1: 1,
-  // });
+  if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+    $("header footer").inertiaScroll({
+      parent: $("#wrap"),
+      childDelta1: 1,
+    });
+  }
 
   var cursor = $(".cursor"),
     cWidth = 20,
@@ -98,7 +100,7 @@ $(function () {
     } else {
       target.css("background-position-y", "center");
     }
-    if (scroll === 0) {
+    if (scroll == 0) {
       target.css("background-position-y", "center");
     }
   });
