@@ -57,8 +57,6 @@ $(function () {
     mouseY = e.pageY;
   });
 
-  //img_hover
-
   $(".profile_img").on({
     mouseenter: function () {
       cursor.addClass("cursor_none");

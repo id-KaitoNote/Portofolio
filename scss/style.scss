@@ -46,7 +46,7 @@ body {
 }
 
 .path {
-  stroke: white;
+  stroke: #1488cc;
   fill: none;
   stroke-width: 3.5;
   stroke-dasharray: 5000;
@@ -72,7 +72,7 @@ body {
   animation-delay: 2.9s;
 }
 
-@keyframes DASH {
+@keyframes path {
   0% {
     stroke-dashoffset: 5000;
   }
